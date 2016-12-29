@@ -39,7 +39,7 @@ public class UniqueLongString {
 					length1++;
 				}
 			}
-			System.out.println(length);
+			System.out.println(length1);
 		}
 	}
 }

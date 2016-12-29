@@ -2,7 +2,7 @@ package dataStructureImplementations;
 
 import java.util.ArrayList;
 
-public class Node {
+public class Node{
 
 	private String data;
 	private ArrayList<Node> children = new ArrayList<Node>();
@@ -34,15 +34,19 @@ public class Node {
 		r.getChildren().add(node);
 		return node;
 	}
-	
-	public void printTree(Node r){
+	//Preorder
+	public void traverseTree(Node r){
 		System.out.println(r+ ": "+r.getData());
 		for(Node n:r.getChildren()){
-			printTree(n);
+			traverseTree(n);
 		}
 	}
 
-	public static void main(String[] args) {
+	public boolean areTreesIdentical(Node n2) {
+		return true;
+	}
+
+/*	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Node n = new Node(null);
 		n.setData("root");				
@@ -51,6 +55,6 @@ public class Node {
 		n.addChild(child, "child-12");
 		n.addChild(child, "child-13");		
 		n.printTree(n);
-	}
+	}*/
 
 }
