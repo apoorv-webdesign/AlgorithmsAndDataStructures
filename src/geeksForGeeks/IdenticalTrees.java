@@ -13,7 +13,7 @@ public class IdenticalTrees extends Node{
 	public String traversTree(Node r){
 		System.out.println("traversTree");
 		for(Node n:r.getChildren()){
-			traverseTree(n);
+			preOrderTraversal();
 			return n.getData();
 		}
 		return r.getData();

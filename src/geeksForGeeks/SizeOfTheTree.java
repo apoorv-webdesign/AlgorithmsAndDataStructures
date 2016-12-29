@@ -1,7 +1,6 @@
 package geeksForGeeks;
 
 import dataStructureImplementations.Node;
-import dataStructureImplementations.TreeInOrderTraversal;
 
 public class SizeOfTheTree extends Node{
 	int size;
