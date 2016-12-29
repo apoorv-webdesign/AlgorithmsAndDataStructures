@@ -1,4 +1,4 @@
-package solutions;
+package leetCodeSolutions;
 
 import java.util.SortedSet;
 import java.util.TreeSet;

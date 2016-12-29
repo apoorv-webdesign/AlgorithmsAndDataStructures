@@ -1,4 +1,4 @@
-package solutions;
+package leetCodeSolutions;
 
 public class HammingDistance {
 
