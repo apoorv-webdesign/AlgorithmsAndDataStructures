@@ -3,27 +3,29 @@ package leetCodeSolutions;
 public class AtoI {
 
 	public static void main(String[] args) {
-		
-		String str = "   12Apoorv";
-		str=str.trim();
-		int result=0,r=0;
-		int reverse =0;
-		for(int i=0; i<str.length();i++){
-			if(!Character.isDigit(str.charAt(i)) || str.ch){
+
+		String str = "010";
+		str = str.trim();
+		int result = 0, flag=1;
+
+		if (str.charAt(0) == '-' || str.charAt(0) == '+') {
+			if (str.charAt(0) == '-') {
+				flag = -1;
+			}
+			str = str.substring(1);
+		}
+		System.out.println(str);
+
+		for (int i = 0; i < str.length(); i++) {
+			if (!Character.isDigit(str.charAt(i))) {
 				break;
 			}
-			if(Character.isDigit(str.charAt(i))){
-				result += (str.charAt(i)-48) * Math.pow(10, r);
-				r++;
+			if (Character.isDigit(str.charAt(i))) {
+				result = result *10 + (str.charAt(i) - '0');
 			}
 		}
-		r=1;
-		while (result!=0){
-			r = result%10;
-			reverse =reverse*10+r;
-			result = result/10;
-		}
-		System.out.println(reverse);
+
+		System.out.println(result * flag);
 
 	}
 
