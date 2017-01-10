@@ -4,6 +4,7 @@ public class ReverseAnArray {
 
 	public static void main(String[] args) {
 		// Purpose: Reverse an Array/String without affecting the special characters
+		//Challenge: how to do it without extra space in Java?
 		String str = "Ap%^oo*rv";
 		char [] newCh = str.toCharArray();//new char[str.length()];
 		char ch;
@@ -27,5 +28,4 @@ public class ReverseAnArray {
 		str = String.copyValueOf(newCh);
 		System.out.println(str);
 	}
-
 }
