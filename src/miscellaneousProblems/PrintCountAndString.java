@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //Purpose: print count of occurrences and the character
 //Example: "111" -> "3111"
-//		   "112222" -> "311142"
+//		   "1112222" -> "311142"
 public class PrintCountAndString {
 	public String countOccurences(String s) {
 		int[] arr = new int[256];
