@@ -1,6 +1,6 @@
 package miscellaneousProblems;
 // Purpose : find gcd of the two numbers
-// Solution: Euclidean Algrithms
+// Solution: Euclidean Algorithm
 public class CalculateGCD {
 	public int calcGCD(int a, int b){
 		return b == 0 ? a : calcGCD (b, a % b); 
